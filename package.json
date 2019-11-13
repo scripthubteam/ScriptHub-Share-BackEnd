@@ -1,28 +1,25 @@
 {
-  "name": "scripthubbotlist",
-  "version": "0.0.0",
-  "description": "",
-  "main": "server/app.js",
-  "scripts": {
-    "start": "node server/app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/scripthubteam/ScriptHub-Botlist.git"
-  },
-  "keywords": [],
-  "author": "Script Hub",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/scripthubteam/ScriptHub-Botlist/issues"
-  },
-  "dependencies": {
-    "discord.js": "^11.5.1",
-    "ejs": "^2.7.1",
-    "express": "^4.17.1",
-    "express-session": "^1.16.2",
-    "passport": "^0.4.0",
-    "passport-discord": "^0.1.3"
-  },
-  "homepage": "https://github.com/scripthubteam/ScriptHub-Botlist#readme"
+    "name": "scripthubbotlist",
+    "version": "0.0.0",
+    "description": "",
+    "main": "server/app.js",
+    "scripts": {
+        "start": "node server/app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/scripthubteam/ScriptHub-Botlist.git"
+    },
+    "keywords": [],
+    "author": "Script Hub",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/scripthubteam/ScriptHub-Botlist/issues"
+    },
+    "dependencies": {
+        "ejs": "^2.7.1",
+        "express": "^4.17.1",
+        "express-session": "^1.16.2"
+    },
+    "homepage": "https://github.com/scripthubteam/ScriptHub-Botlist#readme"
 }
