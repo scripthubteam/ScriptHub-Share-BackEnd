@@ -17,9 +17,7 @@
         "url": "https://github.com/scripthubteam/ScriptHub-Botlist/issues"
     },
     "dependencies": {
-        "ejs": "^2.7.1",
-        "express": "^4.17.1",
-        "express-session": "^1.16.2"
+        "express": "^4.17.1"
     },
     "homepage": "https://github.com/scripthubteam/ScriptHub-Botlist#readme"
 }
