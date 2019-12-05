@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+import Box from '@material-ui/core/Box';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import './App.css';
+import { MuiThemeProvider } from '@material-ui/core/styles';
+import theming from './Components/Layout/Tema';
 
-function App() {
+const loading = () => {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-        </p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-        </a>
-			</header>
-		</div>
+		<Box position="absolute" top="50%" left="50%">
+			<CircularProgress />
+		</Box>
 	);
 }
 
+function App() {
+	const tema = theming.defaultTheme;
+
+	const Login = React.lazy(() => import('./Components/Login/Login'));
+	const Layout = React.lazy(() => import('./Components/Layout/Layout'));
+
+	return (
+		<MuiThemeProvider theme={tema}>
+			<HashRouter>
+				<React.Suspense fallback={loading()}>
+					<Switch>
+						<Route exact path='/login' name='Login' render={props => <Login {...props} />} />
+						<Route path='/' name='Inicio' render={props => <Layout {...props} />} />
+					</Switch>
+				</React.Suspense>
+			</HashRouter>
+		</MuiThemeProvider>
+	);
+}
 export default App;
