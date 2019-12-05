@@ -1,24 +1,34 @@
 {
-  "name": "scripthubbotlist",
-  "version": "0.0.0",
-  "description": "",
-  "main": "server/app.js",
-  "scripts": {
-    "start": "node server/app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/scripthubteam/ScriptHub-Botlist.git"
-  },
-  "keywords": [],
-  "author": "Script Hub",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/scripthubteam/ScriptHub-Botlist/issues"
-  },
+  "name": "ScriptHub-Share",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0"
   },
-  "homepage": "https://github.com/scripthubteam/ScriptHub-Botlist#readme"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
