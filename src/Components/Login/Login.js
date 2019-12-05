@@ -14,8 +14,7 @@ import { Redirect } from 'react-router-dom';
 import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
-// import { MuiThemeProvider } from '@material-ui/core/styles';
-// import theming from '../Layout/Tema';
+
 
 function Copyright() {
     return (
@@ -30,12 +29,15 @@ function Copyright() {
     );
 }
 
+const imagen = Math.floor(Math.random() * (1 - 4) + 4)
+
+
 const useStyles = makeStyles(theme => ({
     root: {
         height: '100vh',
     },
     image: {
-        backgroundImage: 'url(https://i.imgur.com/8INJcrg.jpg)',
+        backgroundImage: `url(${imagen === 1 ? 'https://i.imgur.com/8INJcrg.jpg' : imagen === 2 ? 'https://i.imgur.com/x3FKKfS.jpg' : imagen === 3 ? 'https://i.imgur.com/h45pApP.jpg' : ''})`,
         backgroundRepeat: 'no-repeat',
         backgroundColor: theme.palette.grey[50],
         backgroundSize: 'cover',
@@ -52,7 +54,7 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.secondary.main
     },
     form: {
-        width: '100%', // Fix IE 11 issue.
+        width: '100%',
         marginTop: theme.spacing(1)
     },
     submit: {
