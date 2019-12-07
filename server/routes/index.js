@@ -3,7 +3,4 @@ const express = require("express"),
 
 const loginRoute = require("./login")
 
-router.use(loginRoute)
-
-
 module.exports = router
